@@ -4,7 +4,7 @@ let getCase = require('./cases.js').getCase;
 
 let runCase = function(caseName, context) {
 	let testCase = getCase(caseName);
-	testCase.run(context);
+	return testCase.run(context);
 }
 
 exports.runCase = runCase;

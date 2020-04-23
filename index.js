@@ -12,5 +12,7 @@ let context = new Context(environment, config);
 loadCase();
 
 taskRunner.runCase('homepage', context).then(() => {
-    taskRunner.runCase('login', context);
+    taskRunner.runCase('login', context).then(() => {
+        taskRunner.runCase('cartpage', context);
+    });
 });

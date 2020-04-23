@@ -1,8 +1,30 @@
 {
-    "homePageUrl": "https://sf-b2b92-net01.hn.smartosc.com/",
-    "loginPageUrl": "https://sf-b2b92-net01.hn.smartosc.com/b2b-login",
+    "baseUrl": "https://sf-b2b93-net01.hn.smartosc.com/",
+    "homePageUrl": "/",
+    "login":
+    {
+        "url": "/b2b-login",
+        "credential":
+        {
+            "username": "cucnt12",
+            "password": "123456"
+        },
+        "selector":
+        {
+            "username": "#UserName",
+            "password": "#Password",
+            "submit": "#SignInButton"
+        }
+    },
+    "selector" :{
+    	"minicartIcon" : ".cxa-minicart-component .basket",
+    	"minicartMenu" : ".cxa-minicart-component .minicart",
+    	"checkoutButton" : ".cxa-minicart-component .checkout-button"
+    },
     "launchSetting":
     {
-        "headless": false
+        "headless": false,
+        "defaultViewport": null,
+        "args": ["--start-maximized"]
     }
 }

@@ -16,6 +16,39 @@
             "submit": "#SignInButton"
         }
     },
+    "cookie" : {
+    	"selector" :{
+    		"submit": ".privacy-warning .submit a"
+    	}
+    },
+    "addToCart" : {
+    	"productPageUrl" : "/Catalogs/Habitat_Master/Habitat_Master-Assortments/Habitat_Master-DefaultRecommendations/6042283",
+    	"selector":{
+    		"addToCartBtn" : ".add-to-cart-btn"
+    	}
+    },
+    "delivery":{
+    	"selector" : {
+    		"deliveryOptions" : "#orderShippingPreference",
+    		"addressName" :".shipall-name input",
+    		"city" : ".shipall-city input",
+    		"state" : ".shipall-state input",
+    		"address": ".shipall-address input",
+    		"zipCode" : ".shipall-zipcode input",
+    		"country" : ".shipall-country select",
+    		"shippingOptionBtn" : "#orderGetShippingMethods",
+    		"shippingOption" : ".shipping-option input",
+    		"shippingOptionNumber" : 1,
+    		"billingBtn" : "#ToBillingButton"
+    	},
+    	"deliveryOption" : "1",
+    	"addressName" : "NY",
+    	"city" : "NY",
+    	"state" : "NY",
+    	"address" : "NY",
+    	"zipCode" : "123",
+    	"country" : "US"
+    },
     "selector" :{
     	"minicartIcon" : ".cxa-minicart-component .basket",
     	"minicartMenu" : ".cxa-minicart-component .minicart",

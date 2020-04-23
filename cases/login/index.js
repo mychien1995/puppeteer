@@ -8,6 +8,7 @@ let run = async function(context) {
     let loginPageUrl = getAbsoluteUrl(config.baseUrl, config.login.url);
     let page = await context.getCurrentPage();
     await page.goto(loginPageUrl);
+    await page.waitFor(1000);
     await page.type(config.login.selector.username, config.login.credential.username);
     await page.type(config.login.selector.password, config.login.credential.password);
     await page.waitForSelector(config.login.selector.submit, {visible: true, timeout: 30000});

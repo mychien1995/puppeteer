@@ -13,6 +13,12 @@ loadCase();
 
 taskRunner.runCase('homepage', context).then(() => {
     taskRunner.runCase('login', context).then(() => {
-        taskRunner.runCase('cartpage', context);
+        taskRunner.runCase('addtocart', context).then(() => {
+            taskRunner.runCase('cartpage', context).then(() => {
+                taskRunner.runCase('cookieConfirm', context).then(() => {
+                    taskRunner.runCase('deliverystep', context);
+                });
+            });
+        });
     });
 });
